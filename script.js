@@ -35,4 +35,4 @@ for(i=0;i<list.length;i++){
 }
 text+= '</ul>';
 
-document.getElementById('container').innerHTML = text;
+document.getElementById('container').innerHTML = text
