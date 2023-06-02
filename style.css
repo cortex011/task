@@ -1,7 +1,9 @@
+
+
 body{
     margin: 0;
     padding: 0;
-    height: 1000px;
+    
     font-family: 'Open Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
 }
@@ -62,17 +64,32 @@ a{
 
 .home{
     background-image: url('img/main.jpg');
-    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     top: -125px;
-    display: flex;
-    align-items: center;
+    height: 100vh;
+    
+   
+    
 }
 
-.home .content{
-    margin: 0 150px;
+.home-shadow{
+    height: 100%;
+    padding: 0 150px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+}
+
+
+
+
+
+
+
+ .content{
+   
     color: white;
     
 }
@@ -101,7 +118,92 @@ a{
 }
 
 .content a:hover{
-    background: none;
+    background: white;
     border: 3px black solid;
-    
+    color: black;
+}
+
+
+ /* Restoran Menyusu */
+
+ .rest-menu{
+   padding: 0 150px;
+   margin-top: -120px;
+ }
+
+ .menu-title{
+   font-size: 22px;
+ }
+
+ .all-products{
+   display: flex;
+   flex-wrap: wrap;
+ }
+
+ .all-products .product{
+   flex: 1;
+   margin-left: 17px;
+   background-color: white;
+   border-radius: 10px;
+   box-shadow: -4px 1px 14px 0px rgba(0,0,0,0.75);
+   -webkit-box-shadow: -4px 1px 14px 0px rgba(0,0,0,0.75);
+   -moz-box-shadow: -4px 1px 14px 0px rgba(0,0,0,0.75);
+ }
+
+ .product-img{
+   width: 240px;
+   height: 240px;
+   border-bottom: 1px solid black;
+ }
+
+ .product-img img{
+   object-fit: contain;
+ }
+
+ .product-content{
+   width: 240px;
+   font-size: 14px;
+ }
+
+ .product-cat{
+   text-align: center;
+   font-size: 12px;
+ }
+
+ .product-title{
+   font-size: 28px;
+   text-align: center;
+   color: red;
+   margin-top: -18px;
+ }
+
+ .product-inside{
+   width: 200px;
+   margin: auto;
+   color: rgb(92, 87, 87);
+   margin-top: -20px;
+ }
+
+.product-price{
+   font-size: 25px;
+   text-align: center;
+   font-family: 'Playfair Display', serif;
+   font-weight: bold;
+}
+
+.product-btn{
+   display: inline-block;
+   border-radius: 30px;
+   padding: 5px 10px;
+   background-color: red;
+   font-size: 16px;
+}
+
+.product-btn:hover{
+   background-color: white;
+   border: 1px solid red;
+}
+
+.product-btn:hover > a{
+   color: red !important;
 }
