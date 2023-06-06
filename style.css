@@ -1,5 +1,14 @@
+html::-webkit-scrollbar{
+  background-color: white;
+  width: 8px;
+  
+}
 
-
+html::-webkit-scrollbar-thumb{
+  background-color: red;
+  border-radius: 30px;
+  
+}
 body{
     margin: 0;
     padding: 0;
@@ -206,4 +215,97 @@ a{
 
 .product-btn:hover > a{
    color: red !important;
+}
+
+/* Restoran filiallari */
+
+.rest-filials{
+  padding: 0 150px;
+}
+
+.sectitle{
+  font-size: 24px;
+}
+
+hr{
+  margin-top: -30px;
+}
+.sec-items{
+  display: flex;
+}
+
+.filial-item{
+  background-color: white;
+  box-shadow: -2px -1px 7px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: -2px -1px 7px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: -2px -1px 7px 0px rgba(0,0,0,0.75);
+  flex: 1;
+  margin-left: 15px;
+  max-width: 340px;
+}
+
+.filial-img{
+  height: 330px;
+}
+
+.filial-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover !important;
+
+}
+
+.filial-title{
+  font-size: 30px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.filial-text{
+  padding: 15px;
+  display: flex;
+  font-size: 18px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.filial-text i{
+  margin-right: 5px;
+}
+
+/* Bizimlə Əlaqə hissəsi */
+
+.contact-section{
+  padding: 20px 150px;
+}
+
+.contact-title{
+  text-align: center;
+  padding: 10px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.contact-point{
+  display: flex;
+}
+
+.map-content{
+  
+  width: 50%;
+  height: 400px;
+}
+
+.contact-text{
+  padding: 20px;
+}
+
+.contact-item div:first-child{
+  font-size: 17px;
+  opacity: 0.5;
+}
+
+.contact-item div:nth-child(2){
+  font-size: 25px;
+  opacity: 1;
 }
