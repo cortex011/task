@@ -17,7 +17,7 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 a{
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 
@@ -46,10 +46,14 @@ a{
     align-items: center;
 
 }
+.menu a{
+  text-decoration: none;
+}
 
 .header .menu a{
     margin: 10px;
     border-bottom: 1px solid transparent;
+    
 }
 
 .header .menu a:hover{
