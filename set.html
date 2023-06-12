@@ -6,6 +6,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@300&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="stylesheet" href="owl-carousel/assets/owl.carousel.min.css">
         <link rel="stylesheet" href="owl-carousel/assets/owl.theme.default.min.css">
@@ -37,6 +38,7 @@
                 <a href="#section5">Müştəri rəyləri</a>
             </nav>
             <div class="additional">
+                <div class="hmbr"><i class="fa-solid fa-bars" id="hmbtn"></i></div>
                 <div class="searching">
                     <i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
 
@@ -46,6 +48,22 @@
                 </div>
                 
             </div>
+
+            <script>
+                const hmbtn = document.querySelector('#hmbtn');
+                const menu = document.querySelector('.menu');
+
+                hmbtn.addEventListener('click', function(){
+                    menu.classList.toggle('active');
+                    document.addEventListener('click',function(e){
+                       if(!e.composedPath().includes(hmbtn)){
+                        menu.classList.remove('active');
+                       } 
+                    })
+                })
+                   
+                
+            </script>
         </header>
 
         <section class="home" id="section1" >

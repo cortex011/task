@@ -309,7 +309,7 @@ hr{
 
 .map-content{
   
-  width: 50%;
+  width: 100%;
   height: 400px;
 }
 
@@ -358,6 +358,10 @@ hr{
   width: 100%;
   height: 100%;
   border-radius: 50%;
+}
+
+.hmbr{
+  display: none;
 }
 
 .feed p{
@@ -413,6 +417,10 @@ hr{
 
 }
 
+.footer-form button{
+  margin-top: 10px;
+}
+
 .footer-form label{
   color: white;
 }
@@ -427,3 +435,162 @@ hr{
 footer{
   margin-top: 100px;
 }
+
+@media only screen and (max-width: 560px){
+
+    
+
+     .header{
+      margin: 10px 0;
+     }
+
+
+    .menu{
+      display: none !important;
+      position: absolute;
+      top: 100%;
+      left: 2.5%;
+      width: 95%;
+      background-color: white;
+      text-align: center;
+      
+     }
+
+     .hmbr{
+      display: block;
+     }
+
+     .menu.active{
+      display: block !important;
+     }
+
+    
+
+
+     .menu a{
+      display: block !important;
+      margin-top: 10px;
+     }
+    
+     .content{
+      margin: auto;
+      position: absolute;
+      width: 95%;
+      left: 10%;
+     }
+
+     .rest-menu{
+      padding: 10px !important;
+     }
+
+     .rest-menu hr{
+      display: none;
+     }
+     
+     .all-products{
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      margin-top: 30px;
+      justify-content: center;
+      flex-wrap: nowrap;
+     }
+
+     .product{
+      width: 90%;
+      margin-top: 10px;
+     }
+
+     .rest-filials{
+      padding: 0 10px;
+      
+    }
+
+    .sec-items{
+      flex-direction: column;
+      width: 100% !important;
+      align-items: center;
+      
+    }
+
+    .filial-item{
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .rest-filials hr{
+      display: none;
+    }
+
+    .contact-section{
+      padding: 30px
+    }
+
+    .contact-point{
+      display: block !important;
+      
+      width: 100% !important;
+      
+    }
+
+    .contact-text{
+      width: 100%;
+    }
+    
+    .map-content{
+      
+      width: 100%;
+      height: 400px;
+      margin: auto;
+    }
+
+    .map-content iframe{
+      width: 100%;
+    }
+
+    .feedback{
+      padding: 10px;
+    }
+
+    
+.main{
+  flex-direction: column;
+}
+
+
+
+
+.main-menu{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.footer-about{
+  color: white;
+  width: 100%;
+}
+
+.about-name{
+  
+  padding-bottom: 20px;
+}
+
+
+
+.footer-form{
+  width: 100%;
+  padding-left: 10px;
+
+}
+
+
+    
+
+
+
+    
+
+     
+}
+
+
